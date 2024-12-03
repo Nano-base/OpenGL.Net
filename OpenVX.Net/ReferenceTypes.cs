@@ -1,11 +1,4 @@
 ﻿
-
-
-
-
-
-
-
 // Copyright (C) 2017 Luca Piccioni
 // 
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -33,13 +26,11 @@ using System.Diagnostics;
 
 namespace OpenVX
 {
-
 	/// <summary>
 	/// OpenVX object.
 	/// </summary>
 	[DebuggerDisplay("Array: Reference={_Reference}")]
-	public struct Array : IDisposable
-	{
+	public struct Array : IDisposable	{
 		#region Constructors
 
 		/// <summary>
@@ -83,7 +74,6 @@ namespace OpenVX
 		public static implicit operator Array(Reference obj) { return (new Array(obj._Reference)); }
 
 		#endregion
-
 		#region IDisposable Implementation
 
 		/// <summary>
@@ -99,16 +89,13 @@ namespace OpenVX
 		}
 
 		#endregion
-
 	}
-
 
 	/// <summary>
 	/// OpenVX object.
 	/// </summary>
 	[DebuggerDisplay("Context: Reference={_Reference}")]
-	public struct Context : IDisposable
-	{
+	public struct Context : IDisposable	{
 		#region Constructors
 
 		/// <summary>
@@ -152,7 +139,6 @@ namespace OpenVX
 		public static implicit operator Context(Reference obj) { return (new Context(obj._Reference)); }
 
 		#endregion
-
 		#region IDisposable Implementation
 
 		/// <summary>
@@ -168,16 +154,13 @@ namespace OpenVX
 		}
 
 		#endregion
-
 	}
-
 
 	/// <summary>
 	/// OpenVX object.
 	/// </summary>
 	[DebuggerDisplay("Convolution: Reference={_Reference}")]
-	public struct Convolution : IDisposable
-	{
+	public struct Convolution : IDisposable	{
 		#region Constructors
 
 		/// <summary>
@@ -221,7 +204,6 @@ namespace OpenVX
 		public static implicit operator Convolution(Reference obj) { return (new Convolution(obj._Reference)); }
 
 		#endregion
-
 		#region IDisposable Implementation
 
 		/// <summary>
@@ -237,16 +219,13 @@ namespace OpenVX
 		}
 
 		#endregion
-
 	}
-
 
 	/// <summary>
 	/// OpenVX object.
 	/// </summary>
 	[DebuggerDisplay("Delay: Reference={_Reference}")]
-	public struct Delay : IDisposable
-	{
+	public struct Delay : IDisposable	{
 		#region Constructors
 
 		/// <summary>
@@ -290,7 +269,6 @@ namespace OpenVX
 		public static implicit operator Delay(Reference obj) { return (new Delay(obj._Reference)); }
 
 		#endregion
-
 		#region IDisposable Implementation
 
 		/// <summary>
@@ -306,16 +284,13 @@ namespace OpenVX
 		}
 
 		#endregion
-
 	}
-
 
 	/// <summary>
 	/// OpenVX object.
 	/// </summary>
 	[DebuggerDisplay("Distribution: Reference={_Reference}")]
-	public struct Distribution : IDisposable
-	{
+	public struct Distribution : IDisposable	{
 		#region Constructors
 
 		/// <summary>
@@ -359,7 +334,6 @@ namespace OpenVX
 		public static implicit operator Distribution(Reference obj) { return (new Distribution(obj._Reference)); }
 
 		#endregion
-
 		#region IDisposable Implementation
 
 		/// <summary>
@@ -375,16 +349,13 @@ namespace OpenVX
 		}
 
 		#endregion
-
 	}
-
 
 	/// <summary>
 	/// OpenVX object.
 	/// </summary>
 	[DebuggerDisplay("Graph: Reference={_Reference}")]
-	public struct Graph : IDisposable
-	{
+	public struct Graph : IDisposable	{
 		#region Constructors
 
 		/// <summary>
@@ -428,7 +399,6 @@ namespace OpenVX
 		public static implicit operator Graph(Reference obj) { return (new Graph(obj._Reference)); }
 
 		#endregion
-
 		#region IDisposable Implementation
 
 		/// <summary>
@@ -444,16 +414,13 @@ namespace OpenVX
 		}
 
 		#endregion
-
 	}
-
 
 	/// <summary>
 	/// OpenVX object.
 	/// </summary>
 	[DebuggerDisplay("Kernel: Reference={_Reference}")]
-	public struct Kernel : IDisposable
-	{
+	public struct Kernel : IDisposable	{
 		#region Constructors
 
 		/// <summary>
@@ -497,7 +464,6 @@ namespace OpenVX
 		public static implicit operator Kernel(Reference obj) { return (new Kernel(obj._Reference)); }
 
 		#endregion
-
 		#region IDisposable Implementation
 
 		/// <summary>
@@ -513,16 +479,13 @@ namespace OpenVX
 		}
 
 		#endregion
-
 	}
-
 
 	/// <summary>
 	/// OpenVX object.
 	/// </summary>
 	[DebuggerDisplay("Image: Reference={_Reference}")]
-	public struct Image : IDisposable
-	{
+	public struct Image : IDisposable	{
 		#region Constructors
 
 		/// <summary>
@@ -566,7 +529,6 @@ namespace OpenVX
 		public static implicit operator Image(Reference obj) { return (new Image(obj._Reference)); }
 
 		#endregion
-
 		#region IDisposable Implementation
 
 		/// <summary>
@@ -582,16 +544,13 @@ namespace OpenVX
 		}
 
 		#endregion
-
 	}
-
 
 	/// <summary>
 	/// OpenVX object.
 	/// </summary>
 	[DebuggerDisplay("Import: Reference={_Reference}")]
-	public struct Import : IDisposable
-	{
+	public struct Import : IDisposable	{
 		#region Constructors
 
 		/// <summary>
@@ -635,7 +594,6 @@ namespace OpenVX
 		public static implicit operator Import(Reference obj) { return (new Import(obj._Reference)); }
 
 		#endregion
-
 		#region IDisposable Implementation
 
 		/// <summary>
@@ -651,16 +609,13 @@ namespace OpenVX
 		}
 
 		#endregion
-
 	}
-
 
 	/// <summary>
 	/// OpenVX object.
 	/// </summary>
 	[DebuggerDisplay("Lut: Reference={_Reference}")]
-	public struct Lut : IDisposable
-	{
+	public struct Lut : IDisposable	{
 		#region Constructors
 
 		/// <summary>
@@ -704,7 +659,6 @@ namespace OpenVX
 		public static implicit operator Lut(Reference obj) { return (new Lut(obj._Reference)); }
 
 		#endregion
-
 		#region IDisposable Implementation
 
 		/// <summary>
@@ -720,16 +674,13 @@ namespace OpenVX
 		}
 
 		#endregion
-
 	}
-
 
 	/// <summary>
 	/// OpenVX object.
 	/// </summary>
 	[DebuggerDisplay("MapId: Reference={_Reference}")]
-	public struct MapId
-	{
+	public struct MapId	{
 		#region Constructors
 
 		/// <summary>
@@ -773,16 +724,13 @@ namespace OpenVX
 		public static implicit operator MapId(Reference obj) { return (new MapId(obj._Reference)); }
 
 		#endregion
-
 	}
-
 
 	/// <summary>
 	/// OpenVX object.
 	/// </summary>
 	[DebuggerDisplay("Matrix: Reference={_Reference}")]
-	public struct Matrix : IDisposable
-	{
+	public struct Matrix : IDisposable	{
 		#region Constructors
 
 		/// <summary>
@@ -826,7 +774,6 @@ namespace OpenVX
 		public static implicit operator Matrix(Reference obj) { return (new Matrix(obj._Reference)); }
 
 		#endregion
-
 		#region IDisposable Implementation
 
 		/// <summary>
@@ -842,16 +789,13 @@ namespace OpenVX
 		}
 
 		#endregion
-
 	}
-
 
 	/// <summary>
 	/// OpenVX object.
 	/// </summary>
 	[DebuggerDisplay("MetaFormat: Reference={_Reference}")]
-	public struct MetaFormat
-	{
+	public struct MetaFormat	{
 		#region Constructors
 
 		/// <summary>
@@ -895,16 +839,13 @@ namespace OpenVX
 		public static implicit operator MetaFormat(Reference obj) { return (new MetaFormat(obj._Reference)); }
 
 		#endregion
-
 	}
-
 
 	/// <summary>
 	/// OpenVX object.
 	/// </summary>
 	[DebuggerDisplay("Node: Reference={_Reference}")]
-	public struct Node : IDisposable
-	{
+	public struct Node : IDisposable	{
 		#region Constructors
 
 		/// <summary>
@@ -948,7 +889,6 @@ namespace OpenVX
 		public static implicit operator Node(Reference obj) { return (new Node(obj._Reference)); }
 
 		#endregion
-
 		#region IDisposable Implementation
 
 		/// <summary>
@@ -964,16 +904,13 @@ namespace OpenVX
 		}
 
 		#endregion
-
 	}
-
 
 	/// <summary>
 	/// OpenVX object.
 	/// </summary>
 	[DebuggerDisplay("ObjectArray: Reference={_Reference}")]
-	public struct ObjectArray : IDisposable
-	{
+	public struct ObjectArray : IDisposable	{
 		#region Constructors
 
 		/// <summary>
@@ -1017,7 +954,6 @@ namespace OpenVX
 		public static implicit operator ObjectArray(Reference obj) { return (new ObjectArray(obj._Reference)); }
 
 		#endregion
-
 		#region IDisposable Implementation
 
 		/// <summary>
@@ -1033,16 +969,13 @@ namespace OpenVX
 		}
 
 		#endregion
-
 	}
-
 
 	/// <summary>
 	/// OpenVX object.
 	/// </summary>
 	[DebuggerDisplay("Parameter: Reference={_Reference}")]
-	public struct Parameter : IDisposable
-	{
+	public struct Parameter : IDisposable	{
 		#region Constructors
 
 		/// <summary>
@@ -1086,7 +1019,6 @@ namespace OpenVX
 		public static implicit operator Parameter(Reference obj) { return (new Parameter(obj._Reference)); }
 
 		#endregion
-
 		#region IDisposable Implementation
 
 		/// <summary>
@@ -1102,16 +1034,13 @@ namespace OpenVX
 		}
 
 		#endregion
-
 	}
-
 
 	/// <summary>
 	/// OpenVX object.
 	/// </summary>
 	[DebuggerDisplay("Pyramid: Reference={_Reference}")]
-	public struct Pyramid : IDisposable
-	{
+	public struct Pyramid : IDisposable	{
 		#region Constructors
 
 		/// <summary>
@@ -1155,7 +1084,6 @@ namespace OpenVX
 		public static implicit operator Pyramid(Reference obj) { return (new Pyramid(obj._Reference)); }
 
 		#endregion
-
 		#region IDisposable Implementation
 
 		/// <summary>
@@ -1171,16 +1099,13 @@ namespace OpenVX
 		}
 
 		#endregion
-
 	}
-
 
 	/// <summary>
 	/// OpenVX object.
 	/// </summary>
 	[DebuggerDisplay("Remap: Reference={_Reference}")]
-	public struct Remap : IDisposable
-	{
+	public struct Remap : IDisposable	{
 		#region Constructors
 
 		/// <summary>
@@ -1224,7 +1149,6 @@ namespace OpenVX
 		public static implicit operator Remap(Reference obj) { return (new Remap(obj._Reference)); }
 
 		#endregion
-
 		#region IDisposable Implementation
 
 		/// <summary>
@@ -1240,16 +1164,13 @@ namespace OpenVX
 		}
 
 		#endregion
-
 	}
-
 
 	/// <summary>
 	/// OpenVX object.
 	/// </summary>
 	[DebuggerDisplay("Scalar: Reference={_Reference}")]
-	public struct Scalar : IDisposable
-	{
+	public struct Scalar : IDisposable	{
 		#region Constructors
 
 		/// <summary>
@@ -1293,7 +1214,6 @@ namespace OpenVX
 		public static implicit operator Scalar(Reference obj) { return (new Scalar(obj._Reference)); }
 
 		#endregion
-
 		#region IDisposable Implementation
 
 		/// <summary>
@@ -1309,16 +1229,13 @@ namespace OpenVX
 		}
 
 		#endregion
-
 	}
-
 
 	/// <summary>
 	/// OpenVX object.
 	/// </summary>
 	[DebuggerDisplay("Tensor: Reference={_Reference}")]
-	public struct Tensor : IDisposable
-	{
+	public struct Tensor : IDisposable	{
 		#region Constructors
 
 		/// <summary>
@@ -1362,7 +1279,6 @@ namespace OpenVX
 		public static implicit operator Tensor(Reference obj) { return (new Tensor(obj._Reference)); }
 
 		#endregion
-
 		#region IDisposable Implementation
 
 		/// <summary>
@@ -1378,16 +1294,13 @@ namespace OpenVX
 		}
 
 		#endregion
-
 	}
-
 
 	/// <summary>
 	/// OpenVX object.
 	/// </summary>
 	[DebuggerDisplay("Threshold: Reference={_Reference}")]
-	public struct Threshold : IDisposable
-	{
+	public struct Threshold : IDisposable	{
 		#region Constructors
 
 		/// <summary>
@@ -1431,7 +1344,6 @@ namespace OpenVX
 		public static implicit operator Threshold(Reference obj) { return (new Threshold(obj._Reference)); }
 
 		#endregion
-
 		#region IDisposable Implementation
 
 		/// <summary>
@@ -1447,8 +1359,6 @@ namespace OpenVX
 		}
 
 		#endregion
-
 	}
-
 
 }

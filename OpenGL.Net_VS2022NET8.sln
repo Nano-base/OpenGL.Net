@@ -1,0 +1,210 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OpenGL Specs", "OpenGL Specs", "{74055295-3E82-45FF-8748-6130F534C8B0}"
+	ProjectSection(SolutionItems) = preProject
+		GLSpecs\egl.xml = GLSpecs\egl.xml
+		GLSpecs\gl.xml = GLSpecs\gl.xml
+		GLSpecs\glx.xml = GLSpecs\glx.xml
+		GLSpecs\wgl.xml = GLSpecs\wgl.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{C45EA757-D80F-48B1-B42F-5755F6F9897B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BC9954B5-DF60-43BC-9F04-3FBB2D7DE8E8}"
+	ProjectSection(SolutionItems) = preProject
+		.appveyor.yml = .appveyor.yml
+		.codecov.yml = .codecov.yml
+		.travis.yml = .travis.yml
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ContextSharing", "ContextSharing", "{D94A5DCC-F8D7-477D-97F9-27888A2F7EED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0250BB1C-FF02-4600-9E80-E7EF067C51B6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenGL.Net.WinForms_net8", "OpenGL.Net.WinForms\OpenGL.Net.WinForms_net8.csproj", "{1DA7D767-B83A-416E-A235-2EBE0FBE1769}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{BAF8E731-4A3E-4AC9-A979-D08234CB09DE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Toolkits", "Toolkits", "{81BBBDCD-40F4-43F2-BAA6-AE8280C19105}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenGL.Net_net8", "OpenGL.Net\OpenGL.Net_net8.csproj", "{B53A3B6C-D29A-4F71-8558-B9A5D090724F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nuget", "Nuget", "{7F9EC9D0-456B-4452-8EFE-28ED3A16993C}"
+	ProjectSection(SolutionItems) = preProject
+		OpenGL.Net.CoreProfile.nuspec = OpenGL.Net.CoreProfile.nuspec
+		OpenGL.Net.CoreUI.nuspec = OpenGL.Net.CoreUI.nuspec
+		OpenGL.Net.Debug.nuspec = OpenGL.Net.Debug.nuspec
+		OpenGL.Net.ES2Profile.nuspec = OpenGL.Net.ES2Profile.nuspec
+		OpenGL.Net.Math.nuspec = OpenGL.Net.Math.nuspec
+		OpenGL.Net.nuspec = OpenGL.Net.nuspec
+		OpenGL.Net.Objects.nuspec = OpenGL.Net.Objects.nuspec
+		OpenGL.Net.SC2Profile.nuspec = OpenGL.Net.SC2Profile.nuspec
+		OpenGL.Net.VideoCore.nuspec = OpenGL.Net.VideoCore.nuspec
+		OpenGL.Net.WinForms.nuspec = OpenGL.Net.WinForms.nuspec
+		OpenGL.Net.Xamarin.Android.nuspec = OpenGL.Net.Xamarin.Android.nuspec
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenGL.Net.Test_netcore2.0", "OpenGL.Net.Test\OpenGL.Net.Test_netcore2.0.csproj", "{B98B46DA-EAF7-4F47-91C5-4A9133D97253}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Math", "Math", "{F042B79B-88F3-49AA-9A6C-69D3DAB3E172}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OpenVX Specs", "OpenVX Specs", "{7E7224A8-F54D-40FC-BBE2-384B1D8AD0B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OpenWF Specs", "OpenWF Specs", "{3E381E4C-E006-4F8A-8514-E7FFE7E9CFC5}"
+	ProjectSection(SolutionItems) = preProject
+		GLSpecs\WF\wfc.h = GLSpecs\WF\wfc.h
+		GLSpecs\WF\wfcext.h = GLSpecs\WF\wfcext.h
+		GLSpecs\WF\wfcplatform.h = GLSpecs\WF\wfcplatform.h
+		GLSpecs\WF\wfd.h = GLSpecs\WF\wfd.h
+		GLSpecs\WF\wfdext.h = GLSpecs\WF\wfdext.h
+		GLSpecs\WF\wfdplatform.h = GLSpecs\WF\wfdplatform.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.1", "1.1", "{01508441-CB01-47FD-9A29-04F2E349E08F}"
+	ProjectSection(SolutionItems) = preProject
+		VXSpecs\1.1\vx.h = VXSpecs\1.1\vx.h
+		VXSpecs\1.1\vxu.h = VXSpecs\1.1\vxu.h
+		VXSpecs\1.1\vx_api.h = VXSpecs\1.1\vx_api.h
+		VXSpecs\1.1\vx_compatibility.h = VXSpecs\1.1\vx_compatibility.h
+		VXSpecs\1.1\vx_import.h = VXSpecs\1.1\vx_import.h
+		VXSpecs\1.1\vx_kernels.h = VXSpecs\1.1\vx_kernels.h
+		VXSpecs\1.1\vx_khr_icd.h = VXSpecs\1.1\vx_khr_icd.h
+		VXSpecs\1.1\vx_khr_ix.h = VXSpecs\1.1\vx_khr_ix.h
+		VXSpecs\1.1\vx_khr_nn.h = VXSpecs\1.1\vx_khr_nn.h
+		VXSpecs\1.1\vx_khr_tiling.h = VXSpecs\1.1\vx_khr_tiling.h
+		VXSpecs\1.1\vx_khr_xml.h = VXSpecs\1.1\vx_khr_xml.h
+		VXSpecs\1.1\vx_nodes.h = VXSpecs\1.1\vx_nodes.h
+		VXSpecs\1.1\vx_types.h = VXSpecs\1.1\vx_types.h
+		VXSpecs\1.1\vx_vendors.h = VXSpecs\1.1\vx_vendors.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.2", "1.2", "{EFDAEE53-E38A-4A28-84BD-BFC9004096BA}"
+	ProjectSection(SolutionItems) = preProject
+		VXSpecs\1.2\vx.h = VXSpecs\1.2\vx.h
+		VXSpecs\1.2\vxu.h = VXSpecs\1.2\vxu.h
+		VXSpecs\1.2\vx_api.h = VXSpecs\1.2\vx_api.h
+		VXSpecs\1.2\vx_compatibility.h = VXSpecs\1.2\vx_compatibility.h
+		VXSpecs\1.2\vx_import.h = VXSpecs\1.2\vx_import.h
+		VXSpecs\1.2\vx_kernels.h = VXSpecs\1.2\vx_kernels.h
+		VXSpecs\1.2\vx_khr_class.h = VXSpecs\1.2\vx_khr_class.h
+		VXSpecs\1.2\vx_khr_icd.h = VXSpecs\1.2\vx_khr_icd.h
+		VXSpecs\1.2\vx_khr_ix.h = VXSpecs\1.2\vx_khr_ix.h
+		VXSpecs\1.2\vx_khr_nn.h = VXSpecs\1.2\vx_khr_nn.h
+		VXSpecs\1.2\vx_khr_tiling.h = VXSpecs\1.2\vx_khr_tiling.h
+		VXSpecs\1.2\vx_khr_xml.h = VXSpecs\1.2\vx_khr_xml.h
+		VXSpecs\1.2\vx_nodes.h = VXSpecs\1.2\vx_nodes.h
+		VXSpecs\1.2\vx_types.h = VXSpecs\1.2\vx_types.h
+		VXSpecs\1.2\vx_vendors.h = VXSpecs\1.2\vx_vendors.h
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenGL.Net.Math_net8", "OpenGL.Net\OpenGL.Net.Math_net8.csproj", "{A0A85F75-3745-460C-A48A-9CD826EA0A2E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CoreUI", "CoreUI", "{10C6CBDE-3527-43EA-9939-0A544DA64B77}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GTK", "GTK", "{848F4B01-2A84-41B2-B93C-270F551E7252}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WinForms", "WinForms", "{6050E8C5-AA17-4F11-82E8-F70842CCF05C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Other", "Other", "{BE0C8676-09A4-4345-ACD1-300FBB801AE2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OpenGL", "OpenGL", "{2B66228F-1FDA-4407-8E0D-450C15C1D6D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OpenVX", "OpenVX", "{8F74F24B-4B96-4C8A-829C-27D0C56D390E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OpenWF", "OpenWF", "{307C562C-C042-4A26-89D5-4E0DB7C40D34}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OpenGL", "OpenGL", "{03DB8825-3D65-4545-BA27-430B5DFB8268}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CoreUI", "CoreUI", "{63B2943C-09C4-41BD-8F67-A66DF88FEAB0}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Khronos.Net", "Khronos.Net\Khronos.Net.shproj", "{C403B635-6B87-4540-8679-7889ED5D3360}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DA7D767-B83A-416E-A235-2EBE0FBE1769}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DA7D767-B83A-416E-A235-2EBE0FBE1769}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DA7D767-B83A-416E-A235-2EBE0FBE1769}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1DA7D767-B83A-416E-A235-2EBE0FBE1769}.Debug|x64.Build.0 = Debug|Any CPU
+		{1DA7D767-B83A-416E-A235-2EBE0FBE1769}.Debug|x86.ActiveCfg = Debug|x86
+		{1DA7D767-B83A-416E-A235-2EBE0FBE1769}.Debug|x86.Build.0 = Debug|x86
+		{1DA7D767-B83A-416E-A235-2EBE0FBE1769}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DA7D767-B83A-416E-A235-2EBE0FBE1769}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DA7D767-B83A-416E-A235-2EBE0FBE1769}.Release|x64.ActiveCfg = Release|Any CPU
+		{1DA7D767-B83A-416E-A235-2EBE0FBE1769}.Release|x64.Build.0 = Release|Any CPU
+		{1DA7D767-B83A-416E-A235-2EBE0FBE1769}.Release|x86.ActiveCfg = Release|x86
+		{1DA7D767-B83A-416E-A235-2EBE0FBE1769}.Release|x86.Build.0 = Release|x86
+		{B53A3B6C-D29A-4F71-8558-B9A5D090724F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B53A3B6C-D29A-4F71-8558-B9A5D090724F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B53A3B6C-D29A-4F71-8558-B9A5D090724F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B53A3B6C-D29A-4F71-8558-B9A5D090724F}.Debug|x64.Build.0 = Debug|Any CPU
+		{B53A3B6C-D29A-4F71-8558-B9A5D090724F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B53A3B6C-D29A-4F71-8558-B9A5D090724F}.Debug|x86.Build.0 = Debug|Any CPU
+		{B53A3B6C-D29A-4F71-8558-B9A5D090724F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B53A3B6C-D29A-4F71-8558-B9A5D090724F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B53A3B6C-D29A-4F71-8558-B9A5D090724F}.Release|x64.ActiveCfg = Release|Any CPU
+		{B53A3B6C-D29A-4F71-8558-B9A5D090724F}.Release|x64.Build.0 = Release|Any CPU
+		{B53A3B6C-D29A-4F71-8558-B9A5D090724F}.Release|x86.ActiveCfg = Release|x86
+		{B53A3B6C-D29A-4F71-8558-B9A5D090724F}.Release|x86.Build.0 = Release|x86
+		{B98B46DA-EAF7-4F47-91C5-4A9133D97253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B98B46DA-EAF7-4F47-91C5-4A9133D97253}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B98B46DA-EAF7-4F47-91C5-4A9133D97253}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B98B46DA-EAF7-4F47-91C5-4A9133D97253}.Debug|x64.Build.0 = Debug|Any CPU
+		{B98B46DA-EAF7-4F47-91C5-4A9133D97253}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B98B46DA-EAF7-4F47-91C5-4A9133D97253}.Debug|x86.Build.0 = Debug|Any CPU
+		{B98B46DA-EAF7-4F47-91C5-4A9133D97253}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B98B46DA-EAF7-4F47-91C5-4A9133D97253}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B98B46DA-EAF7-4F47-91C5-4A9133D97253}.Release|x64.ActiveCfg = Release|Any CPU
+		{B98B46DA-EAF7-4F47-91C5-4A9133D97253}.Release|x64.Build.0 = Release|Any CPU
+		{B98B46DA-EAF7-4F47-91C5-4A9133D97253}.Release|x86.ActiveCfg = Release|Any CPU
+		{B98B46DA-EAF7-4F47-91C5-4A9133D97253}.Release|x86.Build.0 = Release|Any CPU
+		{A0A85F75-3745-460C-A48A-9CD826EA0A2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0A85F75-3745-460C-A48A-9CD826EA0A2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0A85F75-3745-460C-A48A-9CD826EA0A2E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A0A85F75-3745-460C-A48A-9CD826EA0A2E}.Debug|x64.Build.0 = Debug|Any CPU
+		{A0A85F75-3745-460C-A48A-9CD826EA0A2E}.Debug|x86.ActiveCfg = Debug|x86
+		{A0A85F75-3745-460C-A48A-9CD826EA0A2E}.Debug|x86.Build.0 = Debug|x86
+		{A0A85F75-3745-460C-A48A-9CD826EA0A2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0A85F75-3745-460C-A48A-9CD826EA0A2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0A85F75-3745-460C-A48A-9CD826EA0A2E}.Release|x64.ActiveCfg = Release|Any CPU
+		{A0A85F75-3745-460C-A48A-9CD826EA0A2E}.Release|x64.Build.0 = Release|Any CPU
+		{A0A85F75-3745-460C-A48A-9CD826EA0A2E}.Release|x86.ActiveCfg = Release|x86
+		{A0A85F75-3745-460C-A48A-9CD826EA0A2E}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D94A5DCC-F8D7-477D-97F9-27888A2F7EED} = {C45EA757-D80F-48B1-B42F-5755F6F9897B}
+		{1DA7D767-B83A-416E-A235-2EBE0FBE1769} = {6050E8C5-AA17-4F11-82E8-F70842CCF05C}
+		{B53A3B6C-D29A-4F71-8558-B9A5D090724F} = {2B66228F-1FDA-4407-8E0D-450C15C1D6D1}
+		{B98B46DA-EAF7-4F47-91C5-4A9133D97253} = {03DB8825-3D65-4545-BA27-430B5DFB8268}
+		{01508441-CB01-47FD-9A29-04F2E349E08F} = {7E7224A8-F54D-40FC-BBE2-384B1D8AD0B5}
+		{EFDAEE53-E38A-4A28-84BD-BFC9004096BA} = {7E7224A8-F54D-40FC-BBE2-384B1D8AD0B5}
+		{A0A85F75-3745-460C-A48A-9CD826EA0A2E} = {F042B79B-88F3-49AA-9A6C-69D3DAB3E172}
+		{10C6CBDE-3527-43EA-9939-0A544DA64B77} = {81BBBDCD-40F4-43F2-BAA6-AE8280C19105}
+		{848F4B01-2A84-41B2-B93C-270F551E7252} = {81BBBDCD-40F4-43F2-BAA6-AE8280C19105}
+		{6050E8C5-AA17-4F11-82E8-F70842CCF05C} = {81BBBDCD-40F4-43F2-BAA6-AE8280C19105}
+		{BE0C8676-09A4-4345-ACD1-300FBB801AE2} = {81BBBDCD-40F4-43F2-BAA6-AE8280C19105}
+		{03DB8825-3D65-4545-BA27-430B5DFB8268} = {0250BB1C-FF02-4600-9E80-E7EF067C51B6}
+		{63B2943C-09C4-41BD-8F67-A66DF88FEAB0} = {0250BB1C-FF02-4600-9E80-E7EF067C51B6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A1302DF-7820-469A-9EB2-83CF7691A088}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Khronos.Net\Khronos.Net.projitems*{b53a3b6c-d29a-4f71-8558-b9a5d090724f}*SharedItemsImports = 5
+		Khronos.Net\Khronos.Net.projitems*{c403b635-6b87-4540-8679-7889ed5d3360}*SharedItemsImports = 13
+	EndGlobalSection
+EndGlobal

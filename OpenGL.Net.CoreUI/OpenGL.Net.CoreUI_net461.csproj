@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>OpenGL.CoreUI</RootNamespace>
     <AssemblyName>OpenGL.Net.CoreUI</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
     <BaseIntermediateOutputPath>obj\net461</BaseIntermediateOutputPath>
@@ -93,12 +93,6 @@
     <Compile Include="Size.cs" />
     <Compile Include="NativeWindowWinNT.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\OpenGL.Net\OpenGL.Net_net461.csproj">
-      <Project>{9e3018f3-770e-4cfd-87d0-baee66e9fe8f}</Project>
-      <Name>OpenGL.Net_net461</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

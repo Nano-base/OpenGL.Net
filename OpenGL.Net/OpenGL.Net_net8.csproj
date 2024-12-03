@@ -1,7 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <AssemblyName>OpenGL.Net</AssemblyName>
     <RootNamespace>OpenGL</RootNamespace>
     <Authors>Luca Piccioni</Authors>
@@ -12,43 +11,40 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <Platforms>AnyCPU;x86</Platforms>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <OutputPath>bin\netcore\Release</OutputPath>
     <BaseIntermediateOutputPath>obj\netcoreapp2.0</BaseIntermediateOutputPath>
     <DefineConstants>TRACE;NETCORE;HAVE_NUMERICS;RELEASE;NETCOREAPP2_0</DefineConstants>
     <DocumentationFile>bin\netcore\Release\netcoreapp2.0\OpenGL.Net.xml</DocumentationFile>
-    <NoWarn>1701;1702;1705;1734</NoWarn>
+    <NoWarn>1701;1702;CS8500</NoWarn>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <OutputPath>bin\netcore\x86\Release</OutputPath>
     <BaseIntermediateOutputPath>obj\netcoreapp2.0</BaseIntermediateOutputPath>
     <DefineConstants>TRACE;NETCORE;HAVE_NUMERICS;RELEASE;NETCOREAPP2_0</DefineConstants>
+    <NoWarn>1701;1702;CS8500</NoWarn>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <OutputPath>bin\netcore\Debug</OutputPath>
     <BaseIntermediateOutputPath>obj\netcoreapp2.0</BaseIntermediateOutputPath>
     <DefineConstants>TRACE;NETCORE;HAVE_NUMERICS;NETCOREAPP2_0</DefineConstants>
+    <NoWarn>1701;1702;CS8500</NoWarn>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <OutputPath>bin\netcore\x86\Debug</OutputPath>
     <BaseIntermediateOutputPath>obj\netcoreapp2.0</BaseIntermediateOutputPath>
     <DefineConstants>TRACE;NETCORE;HAVE_NUMERICS;NETCOREAPP2_0</DefineConstants>
+    <NoWarn>1701;1702;CS8500</NoWarn>
   </PropertyGroup>
-
   <ItemGroup>
     <Compile Remove="obj\**" />
     <EmbeddedResource Remove="obj\**" />
     <None Remove="obj\**" />
   </ItemGroup>
-
   <ItemGroup>
     <Compile Remove="Angle.cs" />
     <Compile Remove="ColorBGR.cs" />
@@ -90,7 +86,6 @@
     <Compile Remove="Vertex4.cs" />
     <Compile Remove="Win32Exception.cs" />
   </ItemGroup>
-
   <ItemGroup>
     <None Remove="ColorBGR.tt" />
     <None Remove="ColorBGRA.tt" />
@@ -108,7 +103,8 @@
     <None Remove="Vertex3Ref.tt" />
     <None Remove="Vertex4.tt" />
   </ItemGroup>
-
   <Import Project="..\Khronos.Net\Khronos.Net.projitems" Label="Shared" />
-
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="copy $(TargetPath) $(SolutionDir)bin\$(TargetFileName)" />
+  </Target>
 </Project>

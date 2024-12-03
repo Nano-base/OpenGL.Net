@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>HelloTriangle</RootNamespace>
     <AssemblyName>HelloTriangle</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -102,7 +103,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -114,17 +117,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\OpenGL.Net\OpenGL.Net.Math_net461.csproj">
-      <Project>{05DFBC0C-AFBC-4ED0-BF43-80D7BB4E8DFD}</Project>
-      <Name>OpenGL.Net.Math_net461</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\OpenGL.Net.WinForms\OpenGL.Net.WinForms_net461.csproj">
       <Project>{1DA7D767-B83A-416E-A235-2EBE0FBE1769}</Project>
       <Name>OpenGL.Net.WinForms_net461</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\OpenGL.Net\OpenGL.Net_net461.csproj">
-      <Project>{9E3018F3-770E-4CFD-87D0-BAEE66E9FE8F}</Project>
-      <Name>OpenGL.Net_net461</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

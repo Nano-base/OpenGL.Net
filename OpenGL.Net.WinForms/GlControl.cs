@@ -71,8 +71,11 @@ namespace OpenGL
 			"Considered only if WGL_ARB_create_context is supported."
 		)]
 		[DefaultValue(null)]
+#if NETFRAMEWORK
 		[TypeConverter(typeof(KhronosVersionConverter))]
+#endif
 		public KhronosVersion ContextVersion { get; set; }
+		
 
 		/// <summary>
 		/// Profile permission.
@@ -198,7 +201,7 @@ namespace OpenGL
 		/// </summary>
 		private AttributePermission _RobustContextBit = AttributePermission.DonCare;
 
-		#endregion
+#endregion
 
 		#region Design Properties - Framebuffer
 

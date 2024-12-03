@@ -1,7 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <AssemblyName>OpenGL.Net.Math</AssemblyName>
     <RootNamespace>OpenGL</RootNamespace>
     <Authors>Luca Piccioni</Authors>
@@ -12,7 +11,6 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <Platforms>AnyCPU;x86</Platforms>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <OutputPath>bin\netcore\Release</OutputPath>
@@ -21,28 +19,24 @@
     <DocumentationFile>bin\netcore\Release\netcoreapp2.0\OpenGL.Net.Math.xml</DocumentationFile>
     <NoWarn>1701;1702;1705;1734</NoWarn>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <OutputPath>bin\netcore\x86\Release</OutputPath>
     <BaseIntermediateOutputPath>obj\netcoreapp2.0</BaseIntermediateOutputPath>
     <DefineConstants>TRACE;NETCORE;RELEASE;NETCOREAPP2_0</DefineConstants>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <OutputPath>bin\netcore\Debug</OutputPath>
     <BaseIntermediateOutputPath>obj\netcoreapp2.0</BaseIntermediateOutputPath>
     <DefineConstants>TRACE;NETCORE;NETCOREAPP2_0</DefineConstants>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <OutputPath>bin\netcore\x86\Debug</OutputPath>
     <BaseIntermediateOutputPath>obj\netcoreapp2.0</BaseIntermediateOutputPath>
     <DefineConstants>TRACE;NETCORE;NETCOREAPP2_0</DefineConstants>
   </PropertyGroup>
-
   <ItemGroup>
     <Compile Remove="3DFX\**" />
     <Compile Remove="3DL\**" />
@@ -171,7 +165,6 @@
     <None Remove="VIV\**" />
     <None Remove="WIN\**" />
   </ItemGroup>
-
   <ItemGroup>
     <Compile Remove="Bcm.cs" />
     <Compile Remove="DeviceContext.cs" />
@@ -256,7 +249,6 @@
     <Compile Remove="WglException.cs" />
     <Compile Remove="Win32Exception.cs" />
   </ItemGroup>
-
   <ItemGroup>
     <None Remove="KhronosLogMapEgl.xml" />
     <None Remove="KhronosLogMapGl.xml" />
@@ -264,11 +256,10 @@
     <None Remove="KhronosLogMapWgl.xml" />
     <None Remove="LICENSE" />
   </ItemGroup>
-
   <ItemGroup>
-    <PackageReference Include="System.Numerics.Vectors" Version="4.3.0" />
-    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.1.0" />
   </ItemGroup>
-
-  
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="copy $(TargetPath) $(SolutionDir)bin\$(TargetFileName)" />
+  </Target>
 </Project>

@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SimpleSharing</RootNamespace>
     <AssemblyName>SimpleSharing</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -119,16 +120,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\OpenGL.Net.WinForms\OpenGL.Net.WinForms_net35.csproj">
-      <Project>{B65D2A92-28FB-400C-990A-C805A8586B60}</Project>
-      <Name>OpenGL.Net.WinForms_net35</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\OpenGL.Net\OpenGL.Net_net35.csproj">
-      <Project>{abb8dfa8-473a-4fc1-85c0-e21680772a58}</Project>
-      <Name>OpenGL.Net_net35</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\opengl.png" />
